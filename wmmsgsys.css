@@ -1,0 +1,144 @@
+/*
+* Copyright(c) A.K.A wmcomlib.js Universal JavaScript Standard Function Library
+* WMProject1217 Studios 2024
+* FileName: wmmsgsys.css
+* FileVersion: 0.1.2
+* Author: WMProject1217
+* LatestCommit: 2024-7-20
+*/
+
+.WMMessageSystem_Container {
+    border: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    z-index: 10000;
+}
+
+.WMMessageSystem_Container .EventMessage_Container {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10100;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message {
+    position: relative;
+    border-radius: 0;
+    margin: 1vh;
+    padding: 1vh;
+    width: 28vw;
+    height: auto;
+    min-height: 16vh;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .8);
+    text-shadow: 1px 1px 1px #5E5E5E;
+    transition-property: right;
+    transition-duration: .5s;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message.status0 {
+    right: -34vw;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message.status1 {
+    right: 0px;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message .title {
+    font-size: 3.7vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message .content {
+    font-size: 2.5vh;
+    word-break: break-all;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message .rhimage {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    height: 12vh;
+    width: 12vh;
+    object-fit: cover;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message .rhtitle {
+    position: absolute;
+    left: 13vh;
+    font-size: 3.7vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.WMMessageSystem_Container .EventMessage_Container .message .rhcontent {
+    padding-left: 12vh;
+    padding-top: 4.5vh;
+    font-size: 2.5vh;
+    word-break: break-all;
+}
+
+.WMMessageSystem_Container .ActiveBarMessage_Container {
+    position: fixed;
+    left: 0px;
+    bottom: 20vh;
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    pointer-events: none;
+    z-index: 10200;
+}
+
+.WMMessageSystem_Container .ActiveBarMessage_Container .content {
+    display: inline-block;
+    border-radius: 0;
+    height: auto;
+    width: auto;
+    padding: 1vh;
+    font-size: 3.7vh;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #5E5E5E;
+    background-color: rgba(0, 0, 0, .6);
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+
+.WMMessageSystem_Container .ActiveBarMessage_Container .content.status0 {
+    opacity: 0;
+}
+
+.WMMessageSystem_Container .ActiveBarMessage_Container .content.status1 {
+    opacity: 1;
+}
+
+.WMMessageSystem_Container .LogMessage_Container {
+    position: fixed;
+    left: 0px;
+    top: 20vh;
+    height: 40vh;
+    width: 36vw;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10500;
+}
+
+.WMMessageSystem_Container .LogMessage_Container .message {
+    position: relative;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #5E5E5E;
+    background-color: rgba(0, 0, 0, .6);
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+
+.WMMessageSystem_Container .LogMessage_Container .message.status0 {
+    opacity: 0;
+}
+
+.WMMessageSystem_Container .LogMessage_Container .message.status1 {
+    opacity: 1;
+}
